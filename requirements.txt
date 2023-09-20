@@ -1,6 +1,5 @@
 flask
 requests
-json
 urllib
 numpy 
 scipy 
