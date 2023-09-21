@@ -62,10 +62,10 @@ def index():
         print("no data")
 
     headers = {'Content-Type': 'application/json'}
-    resp = requests.get(r, headers = headers, stream=True)
+    #resp = requests.get(r, headers = headers, stream=True)
 
-    if (resp.status_code != 200):
-        print("Request failed with status code:", resp.status_code)
+    #if (resp.status_code != 200):
+    #    print("Request failed with status code:", resp.status_code)
 
     response = flask.jsonify({"Constants": p, "Error": AverageError })
     response.headers.add('Access-Control-Allow-Origin', '*')
